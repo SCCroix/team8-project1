@@ -1,9 +1,9 @@
-# Team 8 Project 1
+# Team 8 Project 1: Last Minute Travel Planner
 
-## Due Date
-September 19,
+### Due Date
+September 19, 2022
 
-## Requirements
+### Requirements
 
 1. Use a CSS framework other than Bootstrap.
 
@@ -25,7 +25,7 @@ September 19,
 
 10. Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-## Grading requirements
+### Grading requirements
 
 - Technical Acceptance Criteria
 - Concept
