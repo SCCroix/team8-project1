@@ -1,5 +1,12 @@
 # Team 8 Project 1: Last Minute Travel Planner
 
+## Important Links
+
+### Wireframe
+https://miro.com/app/board/uXjVPa6ddZQ=/
+
+## Project Overview
+
 ### Due Date
 September 19, 2022
 
@@ -37,5 +44,6 @@ September 19, 2022
 
 ## Technology Used 
 
+### CSS Framework
 Tailwind CSS
 https://tailwindcss.com/
