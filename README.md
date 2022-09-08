@@ -1,23 +1,41 @@
 # Team 8 Project 1
 
-# Requirements
+## Due Date
+September 19,
 
-Use a CSS framework other than Bootstrap.
+## Requirements
 
-Be deployed to GitHub Pages.
+1. Use a CSS framework other than Bootstrap.
 
-Be interactive (i.e., accept and respond to user input).
+2. Be deployed to GitHub Pages.
 
-Use at least two server-side APIs.
+3. Be interactive (i.e., accept and respond to user input).
 
-Does not use alerts, confirms, or prompts (use modals).
+4. Use at least two server-side APIs.
 
-Use client-side storage to store persistent data.
+5. Does not use alerts, confirms, or prompts (use modals).
 
-Be responsive.
+6. Use client-side storage to store persistent data.
 
-Have a polished UI.
+7. Be responsive.
 
-Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+8. Have a polished UI.
 
-Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+9. Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+
+10. Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+
+## Grading requirements
+
+- Technical Acceptance Criteria
+- Concept
+- Deployment
+- Respository Quality
+- Application Quality
+- Presentation
+- Collaboration
+
+## Technology Used 
+
+Tailwind CSS
+https://tailwindcss.com/
