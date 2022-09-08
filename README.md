@@ -3,7 +3,7 @@
 ## Important Links
 
 ### Wireframe
-https://miro.com/app/board/uXjVPa6ddZQ=/
+[Miro Whiteboard](https://miro.com/app/board/uXjVPa6ddZQ=/)
 
 ## Project Overview
 
