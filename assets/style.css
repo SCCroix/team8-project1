@@ -4,6 +4,7 @@
     display: flex;
 }
 .box{
+    height: 400px;
     width: 50%;
     float: left;
     padding: 20px;
@@ -33,4 +34,8 @@
     margin-top: 8px;
     margin-right: 16px;
     font-size: 18px;
+}
+
+#map {
+    height: 100%;
 }
