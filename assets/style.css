@@ -1,9 +1,22 @@
 /* this is for itinerary section */
-.wrapper{
+#locationList{
+    display: flex;
+    flex-direction: column;
     border: 3px solid #fff;
     padding: auto;
-    display: flex;
+    background-color: #d79922;
 }
+
+.locationCard {
+    height: 200px;
+    background-color: #EFE2BA;
+    margin: 10px;
+}
+
+.locationCardTitle {
+    text-align: center;
+}
+
 .box{
     height: 400px;
     width: 50%;
@@ -12,6 +25,7 @@
     border: 2px hidden #ccc;
     background-color: #D79922;
 }
+
 /* this is for the title */
 .header{
     border: 1px hidden;
@@ -20,12 +34,14 @@
     text-align: center;
     background-color: #f0ead8;
 }
+
 /* this is for navbar */
 .topnav{
     border: 1px hidden;
     padding: auto;
     text-align: center;
 }
+
 /* this if for navbar 
 /* added this CSS style for the logos */
 .pins{
@@ -37,6 +53,7 @@
     overflow: hidden;
     background-color: #c2c1c1;
 } 
+
 .topnav a{
     float: left;
     display: block;
@@ -46,10 +63,12 @@
     text-decoration: none;
     font-size: 18px;
 }
+
 .topnav a:hover{
     background-color: rgb(152, 129, 129);
     color: lightpink;
 }
+
 .topnav input[type=text] {
     float: center;
     padding: 6px;
@@ -57,11 +76,13 @@
     margin-top: 8px;
     margin-right: 16px;
     font-size: 18px;
-} */
+} 
+
 /* this is for map apis */
 #map {
     height: 100%;
 }
+
 .location{
     border: 2px;
     padding: 10px;

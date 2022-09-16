@@ -16,8 +16,18 @@ addLocationButton.addEventListener("click", addLocationToList)
 
 function addLocationToList() {
   let location = document.getElementById("destination").value;
-  let newitem = document.createElement("h1");
-  newitem.innerText = location;
-  document.getElementById("locationList").appendChild(newitem);
+  
+  // Create location card
+  let locationCard = document.createElement("div")
+  locationCard.classList.add("locationCard")
+
+  // location card title
+  let title = document.createElement("h1");
+  title.innerText = "You've added " + location + " to your itinerary";
+  title.classList.add("locationCardTitle");
+  locationCard.appendChild(title);
+
+  //Add elementcard to list
+  document.getElementById("locationList").appendChild(locationCard);
 
 }
