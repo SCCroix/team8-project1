@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Last-Minute Trip Planner</title>
 </head>
+
 <body>
     <!-- This is for title of the page, could be improve upon. -->
     <header>
@@ -14,16 +16,17 @@
             <h1>Welcome to Last-Minute Trip Planner</h1>
         </nav>
     </header>
-    
+
     <!-- This is for the navbar of the page, could be improve upon. 
     <div class="topnav">
             <a class="active" href="#home">Home</a>
     </div> -->
 
     <!-- This is the introduction paragraph. -->
-    <div class="split left"> 
+    <div class="split left">
         <div class="column">
-            <p>Feeling some cabin fever and need to get away A.S.A.P? Use this Last Minute Trip Planner to get you reader for your soon-to-be fun trip!</p>
+            <p>Feeling some cabin fever and need to get away A.S.A.P? Use this Last Minute Trip Planner to get you
+                reader for your soon-to-be fun trip!</p>
         </div>
 
         <div class="split right">
@@ -45,99 +48,31 @@
             <label for="destination">Pick Your Destination!</label>
             <div class="drop">
                 <button class="dropbtn">Add destination to your trip!</button>
-            <div class="drop-content">
-            <select name="destination" id="destination">
-            <option value="chicago">Chicago</option>
-            <option value="la">Los Angeles</option>
-            <option value="sf">San Francisco</option>
-            <option value="ny">New York</option>
-            <option value="miami">Miami</option>
-            <option value="dallas">Dallas</option>
-            </select>
+                <div class="drop-content">
+                    <select name="destination" id="destination">
+                        <option value="chicago">Chicago</option>
+                        <option value="la">Los Angeles</option>
+                        <option value="sf">San Francisco</option>
+                        <option value="ny">New York</option>
+                        <option value="miami">Miami</option>
+                        <option value="dallas">Dallas</option>
+                    </select>
+                </div>
             </div>
-            </div>
+        </div>
     </div>
-    </div>
-    
+
     <!-- Use this for Map and Weather APIs -->
-    <div class="wrapper">    
+    <div class="wrapper">
         <div class="box">
             <div id="map" class="map"></div>
         </div>
 
         <div class="box">
             <div class="weather">Weather Forecast</div>
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-</head>
-<body>
-    <div class="card">
-        <div class="search">
-            <input type="text" class="search">
-            <!-- the DIV that will contain the widget -->
-<div class="weatherWidget" ></div>
-
-<script>
-   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-   window.weatherWidgetConfig.push({
-       selector:".weatherWidget",
-       apiKey:"MEGF6BW3ZLT8DK3BGKGSQMH7F", //Sign up for your personal key
-       location:"", //Enter an address
-       unitGroup:"metric", //"us" or "metric"
-       forecastDays:5, //how many days forecast to show
-       title:"", //optional title to show in the 
-       showTitle:true, 
-       showConditions:true
-   });
-
-   https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={e1a5b03fef438be1060faeb007869119}
-  
-   (function() {
-   var d = document, s = d.createElement('script');
-   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (d.head || d.body).appendChild(s);
-   })();
-</script>
-            <button>enter</button>
-
-
-
         </div>
     </div>
-
-
-
-
-</body>
-
-
-
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-    </div>
-<!-- Added this logo style to be moved when ready -->
+    <!-- Added this logo style to be moved when ready -->
     <div class="pins">
         <i class="fa-solid fa-location-dot"></i>
         <i class="fa-solid fa-route"></i>
@@ -145,8 +80,10 @@
     </div>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACRbt7bdSoF7jLDz7AlifseaPor-Ffiv8&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACRbt7bdSoF7jLDz7AlifseaPor-Ffiv8&callback=initMap"
+        async defer></script>
     <script src="assets/script.js"></script>
 
 </body>
+
 </html>
