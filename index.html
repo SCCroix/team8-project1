@@ -8,21 +8,61 @@
     <title>Last-Minute Trip Planner</title>
 </head>
 <body>
+    <!-- This is for title of the page, could be improve upon. -->
     <header>
         <nav class="header">
             <h1>Welcome to Last-Minute Trip Planner</h1>
         </nav>
     </header>
     
-    
+    <!-- This is for the navbar of the page, could be improve upon. 
     <div class="topnav">
             <a class="active" href="#home">Home</a>
-            <input type="text" placeholder="Enter Location Here!">
+    </div> -->
+
+    <!-- This is the introduction paragraph. -->
+    <div class="split left"> 
+        <div class="column">
+            <p>Feeling some cabin fever and need to get away A.S.A.P? Use this Last Minute Trip Planner to get you reader for your soon-to-be fun trip!</p>
+        </div>
+
+        <div class="split right">
+            <div class="column">
+                <img src="images/vacation.jpg" alt="briefcases by the beach on a sunny day">
+            </div>
+        </div>
+
     </div>
 
+    <!-- This is for the picking of the locations, could modified more locations later -->
+    <div class="location">
+        <div class="row">
+            <h1>First, Where do you want to go?</h1>
+            <p>Select a destination in the search bar below to see the weather forecast!</p>
+        </div>
+
+        <div class="row">
+            <label for="destination">Pick Your Destination!</label>
+            <div class="drop">
+                <button class="dropbtn">Add destination to your trip!</button>
+            <div class="drop-content">
+            <select name="destination" id="destination">
+            <option value="chicago">Chicago</option>
+            <option value="la">Los Angeles</option>
+            <option value="sf">San Francisco</option>
+            <option value="ny">New York</option>
+            <option value="miami">Miami</option>
+            <option value="dallas">Dallas</option>
+            </select>
+            </div>
+            </div>
+    </div>
+    </div>
+    
+    <!-- Use this for Map and Weather APIs -->
     <div class="wrapper">    
         <div class="box">
-            <div id="map"></div>
+            <div id="map" class="map"></div>
         </div>
 
         <div class="box">

@@ -1,6 +1,7 @@
+/* this is for itinerary section */
 .wrapper{
     border: 3px solid #fff;
-    padding: 20px;
+    padding: auto;
     display: flex;
 }
 .box{
@@ -8,12 +9,28 @@
     width: 50%;
     float: left;
     padding: 20px;
-    border: 2px solid red;
+    border: 2px hidden #ccc;
+    background-color: #D79922;
 }
+/* this is for the title */
+.header{
+    border: 1px hidden;
+    padding: auto;
+    font-size: 50px;
+    text-align: center;
+    background-color: #f0ead8;
+}
+/* this is for navbar */
+.topnav{
+    border: 1px hidden;
+    padding: auto;
+    text-align: center;
+}
+/* this if for navbar 
 .topnav{
     overflow: hidden;
     background-color: #c2c1c1;
-}
+} 
 .topnav a{
     float: left;
     display: block;
@@ -34,8 +51,55 @@
     margin-top: 8px;
     margin-right: 16px;
     font-size: 18px;
-}
-
+} */
+/* this is for map apis */
 #map {
     height: 100%;
 }
+.location{
+    border: 2px;
+    padding: 10px;
+    display: flex;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+/*this is for introduction paragraph */
+.split{
+    border: 1px solid #ccc;
+    padding: 4%;
+    display: flex;
+    background-color: #D79922; 
+}
+.left{ 
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.right{
+    border: 1px hidden;
+}
+/* this is for location */
+.location{
+    border: 1px hidden #ccc;
+    padding: auto;
+    background-color: #EFE2BA;
+    flex-flow: column;
+}
+.drop{
+    position: relative;
+    display: inline block;
+}
+.dropbtn{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.drop-content{
+    display: flex;
+    
+}
+
