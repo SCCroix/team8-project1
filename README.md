@@ -3,7 +3,9 @@
 ## Important Links
 
 ### Wireframe
-[Miro Whiteboard](https://miro.com/app/board/uXjVPa6ddZQ=/)
+<!-- commenting this one out - Spencer, remove when reviewing to verify we can delete [Miro Whiteboard](https://miro.com/app/board/uXjVPa6ddZQ=/) -->
+[Excalidraw]
+(images\wireframe\wireframe-2022-09-14-1015.png)
 
 ## Project Overview
 

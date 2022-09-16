@@ -10,6 +10,12 @@
     padding: 20px;
     border: 2px solid red;
 }
+/* added this CSS style for the logos */
+.pins{
+    color: #F13C20;
+    font-size: xx-large;
+}
+
 .topnav{
     overflow: hidden;
     background-color: #c2c1c1;
