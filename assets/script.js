@@ -6,3 +6,10 @@ function initMap() {
     zoom: 8
   });
 }
+
+const addLocationButton = document.getElementById("dropbtn");
+addLocationButton.addEventListener("click", addLocationToList)
+
+function addLocationToList() {
+  console.log(document.getElementById("destination"))
+}
