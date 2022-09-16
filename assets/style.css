@@ -93,8 +93,7 @@
     flex-flow: column;
 }
 .drop{
-    position: relative;
-    display: inline block;
+    display: flex;
 }
 .dropbtn{
     background-color: #4caf50;
