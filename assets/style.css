@@ -115,8 +115,9 @@
     text-align: center;
 }
 
+
 .locationCardRow {
-    border: red solid 2px;
+    border: red solid 2px; /* remove this later */
     display:  flex;
 }
 
@@ -146,4 +147,10 @@
 
 #map {
     height: 100%;
+}
+
+/* Weather forcast */
+
+.weather {
+    height: 300px;
 }
