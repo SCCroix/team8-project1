@@ -65,8 +65,19 @@
     <!-- Use this for Map and Weather APIs -->
     <div class="wrapper" id="locationList">
         <h1>Here is your trip itenerary</h1>
-        <div class="locationCard">
-            <h1 class="locationCardTitle">You've added to your itenerary</h1>
+
+        <!-- Basic location card and formatting -->
+        <div class="locationCard" id="default Card">
+            <h1 class="locationCardTitle">Location title</h1>
+            <div class="locationCardRow">
+                <p class="locationText">What a lovely location! <br><br>  Here is the weather you can expect if you trabel to this location in the next ten days</p>
+                <div class="map">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div class="locationCardRow">
+                <div class="weather"></div>
+            </div>
 
         </div>
     </div>
