@@ -47,7 +47,7 @@
         <div class="row">
             <label for="destination">Pick Your Destination!</label>
             <div class="drop">
-                <button class="dropbtn">Add destination to your trip!</button>
+                <button class="dropbtn" id="dropbtn">Add destination to your trip!</button>
                 <div class="drop-content">
                     <select name="destination" id="destination">
                         <option value="chicago">Chicago</option>
@@ -63,15 +63,31 @@
     </div>
 
     <!-- Use this for Map and Weather APIs -->
-    <div class="wrapper">
-        <div class="box">
-            <div id="map" class="map"></div>
-        </div>
+    <div class="wrapper" id="locationList">
+        <h1>Here is your trip itenerary</h1>
 
-        <div class="box">
-            <div class="weather">Weather Forecast</div>
+        <!-- Basic location card and formatting -->
+        <div class="locationCard" id="defaultCard">
+            <h1 class="locationCardTitle">Location title</h1>
+
+            <!-- Row of location text and map -->
+            <div class="locationCardRow">
+                <p class="locationText">What a lovely location! <br><br>  Here is the weather you can expect if you trabel to this location in the next ten days</p>
+                <div class="map">
+                    <div id="map"></div>
+                </div>
+            </div>
+
+            <!-- Row of weather -->
+            <div class="locationCardRow">
+                <div class="weather">
+                    <p>Placeholder for weather</p>
+                </div>
+            </div>
+
         </div>
     </div>
+
     <!-- Added this logo style to be moved when ready -->
     <div class="pins">
         <i class="fa-solid fa-location-dot"></i>
