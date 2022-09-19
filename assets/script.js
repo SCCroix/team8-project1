@@ -27,8 +27,8 @@ addLocationButton.addEventListener("click", addLocationToList)
 addLocationButton.addEventListener("click", hideDefaultCard)
 
 function addLocationToList() {
-  let location = document.getElementById("destination").value;
-  destinations.push(location);
+  let locationName = document.getElementById("destination").value;
+  destinations.push(locationName);
   
   // Copy default location card
   let newLocationCard = document.getElementById("defaultCard").cloneNode(true);
@@ -40,7 +40,7 @@ function addLocationToList() {
 
   // Location card title
   let title = newLocationCard.getElementsByClassName("locationCardTitle")[0];
-  title.innerText = location;
+  title.innerText = locationName;
 
   // Location text
   let locationText = newLocationCard.getElementsByClassName("locationText")[0];
@@ -53,8 +53,35 @@ function addLocationToList() {
 
   // set new map settings to pass to api
   mapElement= document.getElementById(newMapID);
-  mapSettings = locationSettings[location];
+  mapSettings = locationSettings[locationName];
   initMap();
+
+
+  // Build selector for weather widget
+  weatherWidgetID = newMapID.concat("Weather")
+  console.log(weatherWidgetID)
+  newLocationCard.getElementsByClassName("weatherWidget")[0].id = weatherWidgetID;
+
+  // Get info for the widget
+  window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+  window.weatherWidgetConfig.push({
+      selector: "#".concat(weatherWidgetID),
+      apiKey: "MEGF6BW3ZLT8DK3BGKGSQMH7F", //Sign up for your personal key
+      location: locationName, //Enter an address
+      unitGroup: "us", //"us" or "metric"
+      forecastDays: 5, //how many days forecast to show
+      title: locationName, //optional title to show in the 
+      showTitle:true, 
+      showConditions:true
+  });
+
+  //Anon function to generate the widget
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
   
 }
 
@@ -67,23 +94,4 @@ function hideDefaultCard() {
   }
 }
 
-//Get info for the widget
-window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-window.weatherWidgetConfig.push({
-    selector:".weatherWidget",
-    apiKey:"MEGF6BW3ZLT8DK3BGKGSQMH7F", //Sign up for your personal key
-    location:"San Francisco,CA", //Enter an address
-    unitGroup:"metric", //"us" or "metric"
-    forecastDays:5, //how many days forecast to show
-    title:"San Francisco,CA", //optional title to show in the 
-    showTitle:true, 
-    showConditions:true
-});
 
-// Anon function to generate the widget
-(function() {
-var d = document, s = d.createElement('script');
-s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
