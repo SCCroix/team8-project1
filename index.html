@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/16373de399.js" crossorigin="anonymous"></script>
     <title>Last-Minute Trip Planner</title>
 </head>
 
@@ -17,10 +18,10 @@
         </nav>
     </header>
 
-    <!-- This is for the navbar of the page, could be improve upon. 
+    <!-- This is for the navbar of the page, could be improve upon. -->
     <div class="topnav">
             <a class="active" href="#home">Home</a>
-    </div> -->
+    </div> 
 
     <!-- This is the introduction paragraph. -->
     <div class="split left">
@@ -47,7 +48,6 @@
         <div class="row">
             <label for="destination">Pick Your Destination!</label>
             <div class="drop">
-                <button class="dropbtn">Add destination to your trip!</button>
                 <div class="drop-content">
                     <select name="destination" id="destination">
                         <option value="chicago">Chicago</option>
@@ -57,21 +57,41 @@
                         <option value="miami">Miami</option>
                         <option value="dallas">Dallas</option>
                     </select>
+                <button class="dropbtn" id="dropbtn">Add destination to your trip!</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Use this for Map and Weather APIs -->
-    <div class="wrapper">
-        <div class="box">
-            <div id="map" class="map"></div>
-        </div>
+    <div class="wrapper" id="locationList">
+        <h1>Here is your trip itenerary</h1>
 
-        <div class="box">
-            <div class="weather">Weather Forecast</div>
+        <!-- Basic location card and formatting -->
+        <div class="locationCard" id="defaultCard">
+            <h1 class="locationCardTitle">Location title</h1>
+
+            <!-- Row of location text and map -->
+            <div class="locationCardRow">
+                <p class="locationText">What a lovely location! <br><br>  Here is the weather you can expect if you trabel to this location in the next ten days</p>
+                <div class="btn2">
+                    <button>Add Another Location!</button>
+                </div>
+                <div class="map">
+                    <div id="map"></div>
+                </div>
+            </div>
+
+            <!-- Row of weather -->
+            <div class="locationCardRow">
+                <div class="weather">
+                    <p>Placeholder for weather</p>
+                </div>
+            </div>
+
         </div>
     </div>
+
     <!-- Added this logo style to be moved when ready -->
     <div class="pins">
         <i class="fa-solid fa-location-dot"></i>

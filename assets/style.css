@@ -1,17 +1,3 @@
-/* this is for itinerary section */
-.wrapper{
-    border: 3px solid #fff;
-    padding: auto;
-    display: flex;
-}
-.box{
-    height: 400px;
-    width: 50%;
-    float: left;
-    padding: 20px;
-    border: 2px hidden #ccc;
-    background-color: #D79922;
-}
 /* this is for the title */
 .header{
     border: 1px hidden;
@@ -20,12 +6,14 @@
     text-align: center;
     background-color: #f0ead8;
 }
+
 /* this is for navbar */
 .topnav{
     border: 1px hidden;
     padding: auto;
     text-align: center;
 }
+
 /* this if for navbar 
 /* added this CSS style for the logos */
 .pins{
@@ -37,6 +25,7 @@
     overflow: hidden;
     background-color: #c2c1c1;
 } 
+
 .topnav a{
     float: left;
     display: block;
@@ -46,10 +35,12 @@
     text-decoration: none;
     font-size: 18px;
 }
+
 .topnav a:hover{
     background-color: rgb(152, 129, 129);
     color: lightpink;
 }
+
 .topnav input[type=text] {
     float: center;
     padding: 6px;
@@ -57,11 +48,8 @@
     margin-top: 8px;
     margin-right: 16px;
     font-size: 18px;
-} */
-/* this is for map apis */
-#map {
-    height: 100%;
-}
+} 
+
 .location{
     border: 2px;
     padding: 10px;
@@ -89,22 +77,103 @@
 .location{
     border: 1px hidden #ccc;
     padding: auto;
+    margin: auto;
     background-color: #EFE2BA;
     flex-flow: column;
+    min-width: 40px;
 }
 .drop{
+    direction: ltr;
     display: flex;
+    justify-content: flex-end;
 }
 .dropbtn{
     background-color: #4caf50;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: auto;
+    margin: auto;
+    font-size: 15px;
     border: none;
-    cursor: pointer;
+    cursor: default;
 }
 .drop-content{
+    margin: auto;
+    padding: auto; 
+
+}
+.btn2{
     display: flex;
+    padding: auto;
+    margin: auto;
+    background-color: #60e764;
 
 }
 
+/* this is for itinerary section */
+#locationList{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #fff;
+    padding: auto;
+    background-color: #d79922;
+}
+
+.locationCard {
+    background-color: #EFE2BA;
+    margin: 10px;
+}
+
+.locationCardTitle {
+    text-align: center;
+}
+
+
+.locationCardRow {
+    border: red solid 2px; /* remove this later */
+    display:  flex;
+}
+
+.locationText {
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    margin: 10px;
+}
+
+.box{
+    height: 400px;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px hidden #ccc;
+    background-color: #D79922;
+}
+
+/* this is for map apis */
+.map {
+    height: 300px;
+    width: 50%;
+    margin: 10px;
+}
+
+#map {
+    height: 100%;
+}
+
+/* Weather forcast */
+
+.weather {
+    height: 300px;
+}
+/* Media Queries*/
+@media (min-width: 500px) {
+    .split{
+        margin: auto;
+        padding: auto;
+    } 
+    .row{
+        margin: auto;
+        padding: auto;
+    }
+}
