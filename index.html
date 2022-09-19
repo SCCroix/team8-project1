@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css"> -->
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/16373de399.js" crossorigin="anonymous"></script>
     <title>Last-Minute Trip Planner</title>
 </head>
 
@@ -18,10 +19,10 @@
         </nav>
     </header>
 
-    <!-- This is for the navbar of the page, could be improve upon. 
+    <!-- This is for the navbar of the page, could be improve upon. -->
     <div class="topnav">
             <a class="active" href="#home">Home</a>
-    </div> -->
+    </div> 
 
     <!-- This is the introduction paragraph. -->
     <div class="split left">
@@ -48,7 +49,9 @@
         <div class="row">
             <label for="destination">Pick Your Destination!</label>
             <div class="drop">
+
                 <button class="dropbtn" id="dropbtn">Add destination to your trip!</button>
+
                 <div class="drop-content">
                     <select name="destination" id="destination">
                         <option value="Chicago, IL">Chicago</option>
@@ -58,6 +61,7 @@
                         <option value="Miami, FL">Miami</option>
                         <option value="Dallas, TX">Dallas</option>
                     </select>
+                <button class="dropbtn" id="dropbtn">Add destination to your trip!</button>
                 </div>
             </div>
         </div>
@@ -65,6 +69,22 @@
 
     <!-- Use this for Map and Weather APIs -->
     <div class="wrapper" id="locationList">
+
+        <h1>Here is your trip itenerary</h1>
+
+        <!-- Basic location card and formatting -->
+        <div class="locationCard" id="defaultCard">
+            <h1 class="locationCardTitle">Location title</h1>
+
+            <!-- Row of location text and map -->
+            <div class="locationCardRow">
+                <p class="locationText">What a lovely location! <br><br>  Here is the weather you can expect if you trabel to this location in the next ten days</p>
+                <div class="btn2">
+                    <button>Add Another Location!</button>
+                </div>
+                <div class="map">
+                    <div id="map"></div>
+        
         <h1>Trip Itinerary</h1>
 
         <!-- Basic location card and formatting -->
@@ -76,12 +96,18 @@
                 <p class="locationText">Choose a location from the dropdown above. <br><br> Weather will display below when you select a location.</p>
                 <div class="mapCanvas">
                     <div class="map"></div>
+
                 </div>
             </div>
 
             <!-- Row of weather -->
             <div class="locationCardRow">
+
+                <div class="weather">
+                    <p>Placeholder for weather</p>
+
                 <div class="weatherWidget">
+
                 </div>
             </div>
 

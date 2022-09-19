@@ -77,22 +77,35 @@
 .location{
     border: 1px hidden #ccc;
     padding: auto;
+    margin: auto;
     background-color: #EFE2BA;
     flex-flow: column;
+    min-width: 40px;
 }
 .drop{
+    direction: ltr;
     display: flex;
+    justify-content: flex-end;
 }
 .dropbtn{
     background-color: #4caf50;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: auto;
+    margin: auto;
+    font-size: 15px;
     border: none;
-    cursor: pointer;
+    cursor: default;
 }
 .drop-content{
+    margin: auto;
+    padding: auto; 
+
+}
+.btn2{
     display: flex;
+    padding: auto;
+    margin: auto;
+    background-color: #60e764;
 
 }
 
@@ -137,13 +150,19 @@
 }
 
 /* this is for map apis */
+
 .mapCanvas {
     height: 300px;
     width: 50%;
     margin: 10px;
 }
 
+
+#map {
+}
+
 .map {
+
     height: 100%;
 }
 
@@ -151,4 +170,17 @@
 
 .weather {
     height: 300px;
+
 }
+
+/* Media Queries*/
+@media (min-width: 500px) {
+    .split{
+        margin: auto;
+        padding: auto;
+    } 
+    .row{
+        margin: auto;
+        padding: auto;
+    }
+
