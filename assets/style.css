@@ -139,13 +139,13 @@
 }
 
 /* this is for map apis */
-.map {
+.mapCanvas {
     height: 300px;
     width: 50%;
     margin: 10px;
 }
 
-#map {
+.map {
     height: 100%;
 }
 
