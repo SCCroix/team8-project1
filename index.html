@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css"> -->
     <link rel="stylesheet" href="assets/style.css">
     <title>Last-Minute Trip Planner</title>
 </head>
@@ -41,7 +42,7 @@
     <div class="location">
         <div class="row">
             <h1>First, Where do you want to go?</h1>
-            <p>Select a destination in the search bar below to see the weather forecast!</p>
+            <p>Select a destination in the dropbox below to see the weather forecast!</p>
         </div>
 
         <div class="row">
@@ -50,12 +51,12 @@
                 <button class="dropbtn" id="dropbtn">Add destination to your trip!</button>
                 <div class="drop-content">
                     <select name="destination" id="destination">
-                        <option value="chicago">Chicago</option>
-                        <option value="la">Los Angeles</option>
-                        <option value="sf">San Francisco</option>
-                        <option value="ny">New York</option>
-                        <option value="miami">Miami</option>
-                        <option value="dallas">Dallas</option>
+                        <option value="Chicago, IL">Chicago</option>
+                        <option value="Los Angeles, CA">Los Angeles</option>
+                        <option value="San Francisco, CA">San Francisco</option>
+                        <option value="New York City, NY">New York</option>
+                        <option value="Miami, FL">Miami</option>
+                        <option value="Dallas, TX">Dallas</option>
                     </select>
                 </div>
             </div>
@@ -64,24 +65,23 @@
 
     <!-- Use this for Map and Weather APIs -->
     <div class="wrapper" id="locationList">
-        <h1>Here is your trip itenerary</h1>
+        <h1>Trip Itinerary</h1>
 
         <!-- Basic location card and formatting -->
         <div class="locationCard" id="defaultCard">
-            <h1 class="locationCardTitle">Location title</h1>
+            <h1 class="locationCardTitle">Add your first location!</h1>
 
             <!-- Row of location text and map -->
             <div class="locationCardRow">
-                <p class="locationText">What a lovely location! <br><br>  Here is the weather you can expect if you trabel to this location in the next ten days</p>
-                <div class="map">
-                    <div id="map"></div>
+                <p class="locationText">Choose a location from the dropdown above. <br><br> Weather will display below when you select a location.</p>
+                <div class="mapCanvas">
+                    <div class="map"></div>
                 </div>
             </div>
 
             <!-- Row of weather -->
             <div class="locationCardRow">
-                <div class="weather">
-                    <p>Placeholder for weather</p>
+                <div class="weatherWidget">
                 </div>
             </div>
 
@@ -96,9 +96,11 @@
     </div>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACRbt7bdSoF7jLDz7AlifseaPor-Ffiv8&callback=initMap"
-        async defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
     <script src="assets/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACRbt7bdSoF7jLDz7AlifseaPor-Ffiv8&callback=initMap"
+    async defer></script>
 
 </body>
 
