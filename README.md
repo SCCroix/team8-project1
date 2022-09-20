@@ -44,10 +44,15 @@ September 19, 2022
 - Collaboration
 
 ## Technology Used 
+Openweathermap.org/API
+Google Maps API
+FontAwesome.com [https://fontawesome.com/download]
+Pixneo (public domain image server) [https://pixnio.com/media/car-miniature-oldtimer-roadway-asphalt]
+
 
 ### CSS Framework
-Tailwind CSS
-https://tailwindcss.com/
+Tailwind CSS (Node.js)
+https://tailwindcss.com/Openweathermap.org/API
 
 ### Wireframe
 [Excalidraw](images/wireframe/wireframe-2022-09-14-1015.png)
