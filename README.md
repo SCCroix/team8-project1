@@ -1,6 +1,12 @@
 # Team 8 Project 1: Last Minute Travel Planner
 
+## Link to deployed website
+https://sccroix.github.io/team8-project1/
+
 ## Project Overview
+
+## Description
+This website will be a quick way for you to plan which of 7 cities you will be visiting.
 
 ### Due Date
 September 19, 2022
