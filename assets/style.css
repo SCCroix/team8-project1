@@ -1,10 +1,22 @@
+
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 /* this is for the title */
+body {
+    background-color: #f0ead8;
+}
+
 .header{
-    border: 1px hidden;
-    padding: auto;
+
     font-size: 50px;
     text-align: center;
     background-color: #f0ead8;
+    color:#4056A1;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* this is for navbar */
@@ -16,9 +28,9 @@
 
 /* this if for navbar 
 /* added this CSS style for the logos */
-.pins{
+.logo{
     color: #F13C20;
-    font-size: xx-large;
+    font-size: 70px;
 }
 
 .topnav{
@@ -55,33 +67,73 @@
     padding: 10px;
     display: flex;
     font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    
+    /* font-family: 'Times New Roman', Times, serif;
+     */
 }
 /*this is for introduction paragraph */
 .split{
-    border: 1px solid #ccc;
-    padding: 4%;
     display: flex;
+    border: 1px solid #ccc;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
     background-color: #D79922; 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .left{ 
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-align: center;
+    align-items: center;
+    
+}
 
+.split p{
+    padding: 2%;
+    background-color: #C5CBE3;
+    color: #4056A1;
+    margin-left: 40px;
+    margin-right: 40px;
+    
 }
 .right{
     border: 1px hidden;
 }
+
 /* this is for location */
 .location{
     border: 1px hidden #ccc;
-    padding: auto;
-    margin: auto;
+    /* padding: auto;
+    margin: auto; */
     background-color: #EFE2BA;
     flex-flow: column;
     min-width: 40px;
+    margin: 10px;
+    color: #4056A1;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+
 }
+
+.location .logo {
+    padding-right: 10px;
+}
+
+.location p{
+    padding-left: 70px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.wherego {
+    display: flex;
+}
+
+.wherego h2{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
 .drop{
     direction: ltr;
     display: flex;
@@ -105,15 +157,34 @@
     display: flex;
     padding: auto;
     margin: auto;
-    background-color: #60e764;
+    background-color:#4056A1;
+    color: white;
 
 }
 
 /* this is for itinerary section */
+
+
+.itin {
+    display: flex;
+   
+}
+
+.itin .logo {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.wrapper h2{
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 30px;
+} 
 #locationList{
     display: flex;
     flex-direction: column;
-    border: 3px solid #fff;
+    margin: 10px;
     padding: auto;
     background-color: #d79922;
 }
@@ -125,6 +196,8 @@
 
 .locationCardTitle {
     text-align: center;
+    color: #4056A1;
+    font-size: 25px;
 }
 
 
@@ -138,6 +211,8 @@
     align-self: center;
     width: 50%;
     margin: 10px;
+    color:#d79922;
+    font-size: 20px;
 }
 
 .box{
@@ -158,8 +233,8 @@
 }
 
 
-#map {
-}
+/* #map {
+} */
 
 .map {
 
@@ -173,8 +248,48 @@
 
 }
 
+/* off you go section */
+
+.offyougo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start; 
+    
+    background-color: #C5CBE3;
+    color: #4056A1;
+    margin: 0;
+    padding: 50px 130px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+.offyougo p {
+font-size: 20px;
+}
+
+.offyougo .logo {
+    padding-right: 50px;
+}
+
+
+/*footer section */ 
+.footer {
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #EFE2BA;
+    color: #4056A1;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 /* Media Queries*/
-@media (min-width: 500px) {
+@media (max-width: 500px) {
     .split{
         margin: auto;
         padding: auto;
@@ -183,4 +298,7 @@
         margin: auto;
         padding: auto;
     }
-
+    .left{
+        font-size: 20px;
+    }
+}

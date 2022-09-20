@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css"> -->
     <link rel="stylesheet" href="assets/style.css">
+    <link rel= "stylesheet" href="assets\styletw.css">    
     <script src="https://kit.fontawesome.com/16373de399.js" crossorigin="anonymous"></script>
     <title>Last-Minute Trip Planner</title>
 </head>
@@ -15,25 +16,23 @@
     <!-- This is for title of the page, could be improve upon. -->
     <header>
         <nav class="header">
-            <h1>Welcome to Last-Minute Trip Planner</h1>
+            <h1>Last-Minute Trip Planner</h1>
         </nav>
     </header>
-
-    <!-- This is for the navbar of the page, could be improve upon. -->
+<!-- commenting this feature out - it isn't needed -->
+    <!-- This is for the navbar of the page, could be improve upon.
     <div class="topnav">
             <a class="active" href="#home">Home</a>
-    </div> 
+    </div>  -->
 
     <!-- This is the introduction paragraph. -->
     <div class="split left">
-        <div class="column">
+        
             <p>Feeling some cabin fever and need to get away A.S.A.P? Use this Last Minute Trip Planner to get you
-                reader for your soon-to-be fun trip!</p>
-        </div>
-
+                ready for your soon-to-be fun trip!</p> 
         <div class="split right">
-            <div class="column">
-                <img src="images/vacation.jpg" alt="briefcases by the beach on a sunny day">
+            <div>
+                <img src="images\site_images\Header_buggy_suitcase-1800x1200.jpg" alt="briefcases by the beach on a sunny day">
             </div>
         </div>
 
@@ -41,16 +40,19 @@
 
     <!-- This is for the picking of the locations, could modified more locations later -->
     <div class="location">
-        <div class="row">
-            <h1>First, Where do you want to go?</h1>
-            <p>Select a destination in the dropbox below to see the weather forecast!</p>
-        </div>
+        <!-- <div class="row"> -->
+            <div class="wherego">
+                <div class="logo">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h2>First, where do you want to go?</h2>
+            </div>
+            <p>Select a destination in the dropbox below to see the weather forecast</p>
+        <!-- </div> -->
 
-        <div class="row">
-            <label for="destination">Pick Your Destination!</label>
+        <!-- <div class="row"> -->
+            <!-- <label for="destination">Pick Your Destination!</label> -->
             <div class="drop">
-
-                <button class="dropbtn" id="dropbtn">Add destination to your trip!</button>
 
                 <div class="drop-content">
                     <select name="destination" id="destination">
@@ -64,29 +66,18 @@
                 <button class="dropbtn" id="dropbtn">Add destination to your trip!</button>
                 </div>
             </div>
-        </div>
+        <!-- s -->
     </div>
 
     <!-- Use this for Map and Weather APIs -->
     <div class="wrapper" id="locationList">
-
-        <h1>Here is your trip itenerary</h1>
-
-        <!-- Basic location card and formatting -->
-        <div class="locationCard" id="defaultCard">
-            <h1 class="locationCardTitle">Location title</h1>
-
-            <!-- Row of location text and map -->
-            <div class="locationCardRow">
-                <p class="locationText">What a lovely location! <br><br>  Here is the weather you can expect if you trabel to this location in the next ten days</p>
-                <div class="btn2">
-                    <button>Add Another Location!</button>
-                </div>
-                <div class="map">
-                    <div id="map"></div>
-        
-        <h1>Trip Itinerary</h1>
-
+        <div class ="itin">
+            <div class="logo">
+                <i class="fa-solid fa-route"></i>
+            </div>
+            <h2>Here is your trip itinerary</h2>
+        </div>
+            
         <!-- Basic location card and formatting -->
         <div class="locationCard" id="defaultCard">
             <h1 class="locationCardTitle">Add your first location!</h1>
@@ -102,25 +93,13 @@
 
             <!-- Row of weather -->
             <div class="locationCardRow">
-
                 <div class="weather">
-                    <p>Placeholder for weather</p>
-
-                <div class="weatherWidget">
-
+                    <div class="weatherWidget"></div>
                 </div>
             </div>
 
         </div>
     </div>
-
-    <!-- Added this logo style to be moved when ready -->
-    <div class="pins">
-        <i class="fa-solid fa-location-dot"></i>
-        <i class="fa-solid fa-route"></i>
-        <i class="fa-solid fa-plane-departure"></i>
-    </div>
-
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
@@ -128,6 +107,31 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACRbt7bdSoF7jLDz7AlifseaPor-Ffiv8&callback=initMap"
     async defer></script>
 
+    <!-- off you go note -->
+    <div class="offyougo">
+        <div >
+            <div class="logo">
+                <i class="fa-solid fa-plane-departure"></i>
+            </div> 
+        </div>    
+        <div>
+           <h2>Now, off you go...</h2>  
+           <p>We hope you enjoy your last-minute get-away!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h3>Created by Group 8</h3>
+            <p>Group Members include Minh Nguyen, Spencer Croy, Milkias Sirak, Layne Ahlstrom</p>
+            <p>Copyright © UC Berkeley Coding Bootcamp</p>
+        </div>
+    </footer>
+    <!-- <div class="logo">
+        <i class="fa-solid fa-location-dot"></i>
+        <i class="fa-solid fa-route"></i>
+        <i class="fa-solid fa-plane-departure"></i>
+    </div> -->
 </body>
 
 </html>

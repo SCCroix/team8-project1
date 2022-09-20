@@ -44,7 +44,7 @@ function addLocationToList() {
 
   // Location text
   let locationText = newLocationCard.getElementsByClassName("locationText")[0];
-  locationText.innerText = "What a lovely location!\n\nHere is the weather you can expect if you trabel to this location in the next ten days";
+  locationText.innerText = "What a lovely location!\n\nHere is the weather you can expect if you travel to this location in the next ten days";
   
   // Creating the new location map
   // First need to change ID to remove duplicate of default
