@@ -1,5 +1,8 @@
 # Team 8 Project 1: Last Minute Travel Planner
 
+## Link to deployed website
+https://sccroix.github.io/team8-project1/
+
 ## Project Overview
 
 ### Due Date
