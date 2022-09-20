@@ -6,7 +6,12 @@ https://sccroix.github.io/team8-project1/
 ## Project Overview
 
 ## Description
-This website will be a quick way for you to plan which of 7 cities you will be visiting.
+This website will be a quick way for you to plan a trip to one or multiple of 7 cities. Each location will display a 5 day forecast to prepare you for the weather and a map of the city will be provided.
+
+## User Story
+AS AN avid traveler\
+I WANT to be able to create of list of cities I will be traveling to\
+SO THAT I can see a map and the weather forecast for the next 5 days\
 
 ### Due Date
 September 19, 2022
@@ -44,10 +49,10 @@ September 19, 2022
 - Collaboration
 
 ## Technology Used 
-Openweathermap.org/API
-Google Maps API
-FontAwesome.com [https://fontawesome.com/download]
-Pixneo (public domain image server) [https://pixnio.com/media/car-miniature-oldtimer-roadway-asphalt]
+Openweathermap.org/API \
+Google Maps API \
+FontAwesome.com https://fontawesome.com/download \
+Pixneo public domain image server https://pixnio.com/media/car-miniature-oldtimer-roadway-asphalt \
 
 
 ### CSS Framework
